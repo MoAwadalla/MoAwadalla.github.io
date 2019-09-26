@@ -1,1 +1,610 @@
-"Hello World" 
+<html><head>
+	<title>Aakash Adesara</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+
+	 <script>
+	 	$(document).ready(function() {
+	 		AOS.init();
+	 		$(".em").css("display", "none");
+
+	 		var flag = false;
+
+	 		$("#face_pic").click(function(){
+				console.log("HAHA");
+				if(flag) {
+					$(".em").css("display", "none");
+		 		} else {
+		 			$(".em").css("display", "inline-block");
+		 		}
+		 		flag = !flag;
+			})
+
+	 	});
+
+	  </script>
+
+<style type="text/css">
+.face:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#yelp {
+	background-color: #d32323;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#yelp:hover {
+	background-color: white;
+	border: 2px solid #d32323;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#memory {
+	background-color: #c2e8f6;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#memory:hover {
+	background-color: white;
+	border: 2px solid #c2e8f6;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#bids {
+	background-color: #f9f3ea;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#bids:hover {
+	background-color: white;
+	border: 2px solid #f9f3ea;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#calhacks {
+	background-color: #98d2ef;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#calhacks:hover {
+	background-color: white;
+	border: 2px solid #98d2ef;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#lsvp {
+	background-color: #ed6858;
+	background-image: url('image/lightspeed2.png');
+	background-size: 100% auto;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#lsvp:hover {
+	background-color: white;
+	border: 2px solid #ed6858;
+	background-size: 100% auto;
+	background-image: url('image/lightspeed.png');
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#mapgems {
+	background-color: #00acc8;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#mapgems:hover {
+	background-color: white;
+	border: 2px solid #00acc8;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#hab {
+	background-color: #0d4c6b;
+	border: 2px solid white;
+	background-size: 100% auto;
+	background-image: url('image/hab.png');
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#hab:hover {
+	background-color: white;
+	border: 2px solid #0d4c6b;
+	background-size: 100% auto;
+	background-image: url('image/hab-blue.png');
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#intrax {
+	background-color: #d4ebbd;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#intrax:hover {
+	background-color: white;
+	border: 2px solid #d4ebbd;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#board {
+	background-color: #d9f1fb;
+	border: 2px solid white;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#board:hover {
+	background-color: white;
+	border: 2px solid #d9f1fb;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#tinovation {
+	background-color: #000000;
+	border: 2px solid white;
+	background-size: 100% auto;
+	background-image: url('image/tinovation2.png');
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#tinovation:hover {
+	background-color: white;
+	border: 2px solid #000000;
+	background-size: 100% auto;
+	background-image: url('image/tinovation.png');
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+#lyft {
+	background-color: #ea0b8c;
+	border: 2px solid white;
+	background-size: 100% auto;
+	background-image: url('image/lyft2.png');
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+#lyft:hover {
+	background-color: white;
+	border: 2px solid #ea0b8c;
+	background-size: 100% auto;
+	background-image: url('image/lyft.png');
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+
+</style></head>
+
+
+
+
+
+<body class="col-md-8 col-md-offset-2" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+
+	<div class="col-md-12" style="min-height: 100%;">
+		<div class="col-md-4 col-md-offset-4 face" style="margin-top: 15%;">
+				<img src="image/face.jpg" id="face_pic" alt="..." class="img-circle col-md-12" style="width: 100%;">
+		</div>
+
+		<div class="col-md-12"><br></div>
+
+		<h1 style="text-align: center; font-family: 'Kaushan Script', cursive; font-size: 350%;" class="col-md-12 name aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"><bold>Aakash Adesara</bold></h1>
+		<p style="font-size: 185%; margin-top: 4%; color: #888888;" class="col-md-12 bio aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"> Hi! <i class="em em-wave" style="display: none;"></i> I'm an undergraduate student at UC Berkeley <i class="em em-bear" style="display: none;"></i> studying Computer Science and Cognitive Science. I am heavily involved in the entrepreneurship <i class="em em-bulb" style="display: none;"></i>and technology <i class="em em-computer" style="display: none;"></i>scene in the valley and enjoy talking about AI, health tech, hackathons, books, art, and neuroscience.<i class="em em-rocket" style="display: none;"></i></p>
+
+		<br>
+
+		<p style="font-size: 150%; text-align: center; margin-top: 5%; color: #BBBBBB;" class="col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"><bold>Scroll for more info</bold></p>
+
+	</div>
+
+	<h3 style="margin-bottom: 3%;" class="col-md-12 aos-init" data-aos="fade-up" data-aos-duration="1500"> What I've done <span style="color: #BBBBBB; font-size: 70%;">(so far)</span>: </h3>
+
+
+	<div class="col-md-12">
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/transparent.png" class="col-md-12" id="lyft" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Lyft</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: #ea0b8c;"><bold>Software Engineering Intern</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>Jan 2019 - May 2019</bold></h5>
+
+		<div><p style="font-size: 100%">Incoming Software Engineering Intern on the Adaptive Pricing team at Lyft.<i class="em em-coffee" style="display: none;"></i></p>
+
+	</div></div>
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/yelp.png" class="col-md-12" id="yelp" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Yelp</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: #d62828;"><bold>Software Engineering Intern</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>May 2018 - August 2018</bold></h5>
+
+		<div><p style="font-size: 100%">Contributed to the Android application on the Waitlist+Reservations team that creates a seamless service to provide customers with a wait-free dining experience at partnering restaurants.  <i class="em em-coffee" style="display: none;"></i></p>
+
+	</div></div>
+
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/memory.png" class="col-md-12" id="memory" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Memory Labs Inc.</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(110, 140, 160, 255);"><bold>Chief Executive Officer</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>January. 2017 - Present</bold></h5>
+
+		<div><p style="font-size: 100%">Founded and lead Memory Labs, a company dedicated to creating an affordable solution for informal caregivers.<i class="em em-male-doctor" style="display: none;"></i> Went through the Free Ventures program and Lightspeed Summer Fellowship. </p>
+</div>
+	</div>
+
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/bids.png" class="col-md-12" id="bids" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>UC Berkeley BID</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(236, 130, 25, 255);"><bold>ML / HCI Researcher</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>August 2017 - Present</bold></h5>
+
+		<div><p style="font-size: 100%">Worked on NewsLens, an intuitive all-encompassing news interface, under the guidance of Marti Hearst PhD and Philippe Laban through BIDS. <i class="em em-microscope" style="display: none;"></i> Specifically working with NLP and entity selection. <i class="em em-books" style="display: none;"></i></p>
+</div>
+	</div>
+
+	<hr class="col-md-12" style="visibility: hidden;">
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/calhacks.png" class="col-md-12" id="calhacks" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Cal Hacks</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(10, 50, 100, 255);"><bold>Executive Director</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>August 2016 - Present</bold></h5>
+
+		<div><p style="font-size: 100%"> Organized the worlds largest collegiate hackathon held annually at UC Berkeley -- raised <i class="em em-money_with_wings" style="display: none;"></i>$300,000 in sponsorship, 2200 attendees, and hosted event for 36 consecutive hours. <i class="em em-100" style="display: none;"></i></p>
+	</div></div>
+
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+			<img src="image/transparent.png" class="col-md-12" id="lsvp" style="margin: 0px; padding: 0px; width: 100%;">
+			<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Lightspeed Venture Partners</bold></h5>
+			<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(230, 80, 70, 255);"><bold>Summer Fellow</bold></h5>
+			<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>May 2017 - Present</bold></h5>
+
+			<div><p style="font-size: 100%">Learned about and applied entrepreneurial skills with close mentorship from Lightspeed partners while working on Memory Labs, a voice assistant for health care. <i class="em em-man_in_business_suit_levitating" style="display: none;"></i></p>
+	</div>
+	</div>
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/mapsnaps.png" class="col-md-12" id="mapgems" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>MapGems</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(20, 150, 190, 255);"><bold>Chief Technical Officer</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>Apr. 2016 - Present</bold></h5>
+
+		<div><p style="font-size: 100%">Developed and deployed MapSnaps, a mobile application for art exploration <i class="em em-earth_americas" style="display: none;"></i>focused on expanding the presence of previously unappreciated local artwork. <i class="em em-art" style="display: none;"></i> </p>
+</div>
+	</div>
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/transparent.png" class="col-md-12" id="hab" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Hackers@Berkeley</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(10, 60, 90, 255);"><bold>Officer</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>August 2016 - Present</bold></h5>
+
+		<div><p style="font-size: 100%"> Helped run various events like HackJam, GameFest, and Berkeley Builds. Also designed and presented intermediate and advanced software development workshops. <i class="em em-male-teacher" style="display: none;"></i></p>
+	</div>
+</div>
+
+<hr class="col-md-12" style="visibility: hidden;">
+
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/intrax.png" class="col-md-12" id="intrax" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Intrax Inc</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(60, 110, 20, 255);"><bold>Web Development Intern</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>Summer 2015, Summer 2016</bold></h5>
+
+		<div><p style="font-size: 100%">Developed security protocols and Drupal module proof-of-concepts. <i class="em em-briefcase" style="display: none;"></i> Also learned about various aspects of machine learning and artificial intelligence in allocated research time.</p>
+	</div></div>
+
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/board.png" class="col-md-12" id="board" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Cupertino City Library TAB</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(20, 120, 150, 255);"><bold>Teen Advisory Board Member</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>June 2011, May 2017</bold></h5>
+
+		<div>
+		<p style="font-size: 100%;">Helped create this board and served as a board member for 6 years thereafter. <i class="em em-book" style="display: none;"></i> Organized several large events and projects for teenagers (ex. CUHacks, Library Lock-In, Teen Garden Project). <i class="em em-kiwifruit" style="display: none;"></i></p>
+		</div>
+	</div>
+
+	<div class="col-md-3 aos-init" style="padding: 12px;" data-aos="fade-up" data-aos-duration="1500">
+		<img src="image/transparent.png" class="col-md-12" id="tinovation" style="margin: 0px; padding: 0px; width: 100%;">
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 0px;"><bold>Tinovation</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; margin-bottom: 0px; color: rgba(0, 0, 0, 255);"><bold>President</bold></h5>
+		<h5 class="col-md-12" style="padding: 0px; margin-top: 3px; color: #888888;"><bold>August 2012 - May 2016</bold></h5>
+
+		<div><p style="font-size: 100%"> Created a curriculum to teach iOS, <i class="em em-iphone" style="display: none;"></i> Android, and web development <i class="em em-desktop_computer" style="display: none;"></i>and created a club with around 300 registered members. Helped host hackathons and various events for members and the community.</p>
+	</div></div>
+
+	</div>
+
+	<hr class="col-md-12">
+
+	<h3 style="margin-top: 2%; margin-bottom: 3%;" class="col-md-10 aos-init" data-aos="fade-up" data-aos-duration="1500"> Technical stack <span style="color: #BBBBBB; font-size: 70%;">(will acquire skills, libraries, and languages as needed)</span>: </h3>
+
+<style type="text/css">
+
+
+	.terminal {
+	  font-family: 'PT mono', sans-serif;
+	  padding: 0px;
+	  padding-bottom: 4%;
+	  background: #111;
+	  margin: auto;
+	  right: 0;
+	  left: 0;
+	  width: 100%;
+	  color: #fff;
+	  background: #333;
+	  border-radius: 5px;
+	  c
+	}
+
+	.header {
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  line-height: 50px;
+	  text-align: center;
+	  color: #111;
+	  background: #EEEEEE;
+	  border-radius: 5px 5px 0 0;
+	}
+
+	.circle {
+	  position: absolute;
+	  margin: auto;
+	  top: 0;
+	  bottom: 0;
+	  height: 12px;
+	  width: 12px;
+	  border-radius: 50%;
+	}
+
+	.circle:nth-child(1) {
+	  left: 20px;
+	  background: #ff5f57;
+	}
+
+	.circle:nth-child(2) {
+	  left: 39px;
+	  background: #ffbd2e;
+	}
+
+	.circle:nth-child(3) {
+	  left: 58px;
+	  background: #2ace42;
+	}
+
+	.terminal span {
+	  position: absolute;
+	  top: 93px;
+	  left: 15px;
+	}
+
+	.terminal textarea {
+	  margin: 42px 30px;
+	  width: 88%;
+	  font-family: 'PT mono', sans-serif;
+	  outline: 0;
+	  border: none;
+	  font-size: 16px;
+	  background: #333;
+	  resize: none;
+	}
+
+</style>
+
+<div class="terminal col-md-12 aos-init" data-aos="fade-up" data-aos-duration="1500">
+  <div class="header">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    aakash_skills.js
+  </div>
+  				<div class="col-md-4 aos-init" data-aos="fade-left" data-aos-duration="1500">
+                	<br>
+                    <p style="font-size: 110%; margin-bottom: 0px;"><strong>Technical (Web)</strong></p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">HTML/CSS/Javascript</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Node.js, ExpressJS, AngularJS</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">ExpressJS, AngularJS</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Python</p>
+                </div>
+
+                <div class="col-md-4 aos-init" data-aos="fade-left" data-aos-duration="1500">
+                	<br>
+                    <p style="font-size: 110%; margin-bottom: 0px;"><strong>Technical (Android)</strong></p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Android SDK</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">OpenCV/Image Processing</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">JAVA Programming</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Extreme Reality SDK</p>
+                </div>
+
+                <div class="col-md-4 aos-init" data-aos="fade-left" data-aos-duration="1500">
+                	<br>
+                    <p style="font-size: 110%; margin-bottom: 0px;"><strong>Libraries/API's</strong></p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Google API's (Maps, Auth.)</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">MongoDB, SQL, Parse</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">LeapJS, MyoJS, JQuery</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Firebase</p>
+                </div>
+
+                <div class="col-md-12"> <br></div>
+
+                <div class="col-md-4 aos-init" data-aos="fade-left" data-aos-duration="1500">
+                	<br>
+                    <p style="font-size: 110%; margin-bottom: 0px;"><strong>Mathematics/Hardware</strong></p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">3D Printing / STL Software</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Octave CLI</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Python Scikit-Learn</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Python OpenCV</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Raspberry Pi Development</p>
+                </div>
+
+                <div class="col-md-4 aos-init" data-aos="fade-left" data-aos-duration="1500">
+                	<br>
+                    <p style="font-size: 110%; margin-bottom: 0px;"><strong>Design (UI/UX)</strong></p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Adobe Photoshop</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Adobe Illustrator</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Adobe Lightroom</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Sketch / App Design</p>
+                </div>
+
+                <div class="col-md-4 aos-init" data-aos="fade-left" data-aos-duration="1500">
+                	<br>
+                    <p style="font-size: 110%; margin-bottom: 0px;"><strong>Other</strong></p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">DSLR Photography</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Microsoft Suite</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Garageband</p>
+                    <p style="font-size: 110%; margin-bottom: 0px;">Final Cut Pro / iMovie</p>
+                </div>
+</div>
+
+            <div class="col-md-12" style="margin: 0px; padding: 0px; width: 100%; font-size: 120%;">
+
+            </div>
+
+	<hr class="col-md-12 aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+	<h3 style="margin-top: 2%; margin-bottom: 3%;" class="col-md-12 aos-init" data-aos="fade-up" data-aos-duration="1500"> Hobbies <span style="color: #BBBBBB; font-size: 70%;">(Wow how exciting!)</span>: </h3>
+
+		<div class="col-md-4 aos-init" style="margin-top: 0px; padding: 7px;" data-aos="fade-up" data-aos-duration="1500">
+			<img src="image/bike.png" class="col-md-12" style="margin: 0px; padding: 0px; width: 100%;">
+			<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 5px;"><bold>Road Biking</bold></h5>
+
+			<div data-aos="fade-up" data-aos-duration="1500" class="aos-init">
+				<p style="font-size: 100%" data-aos="fade-up" data-aos-duration="1500" class="aos-init"> I enjoy riding my Specialized Secteur Road Bike ("Amy") <i class="em em-bike" style="display: none;"></i> around the Bay with friends. I occasionally record memorable trips on my <a href="https://www.strava.com/athletes/7142331"><strong style="color: #888888"> Strava profile</strong></a> and sometimes GoPro some of my trips.</p>
+			</div>
+		</div>
+
+		<div class="col-md-4 aos-init" style="margin-top: 0px; padding: 7px;" data-aos="fade-up" data-aos-duration="1500">
+			<img src="image/camera.png" class="col-md-12" style="margin: 0px; padding: 0px; width: 100%;">
+			<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 5px;"><bold>Photography</bold></h5>
+
+			<div data-aos="fade-up" data-aos-duration="1500" class="aos-init">
+				<p style="font-size: 100%;">I'm an avid photographer and enjoy shooting on my <a href="https://en.wikipedia.org/wiki/Nikon_D3200"><strong style="color: #888888">Nikon D3200</strong></a> and <a href="https://madeby.google.com/phone/"><strong style="color: #888888">Google Pixel</strong></a>. I typically take pictures of nature and city scapes but portrait shots are fun too! <i class="em em-camera_with_flash" style="display: none;"></i> You can check out some of my pieces on my <a href="http://www.instagram.com/aakashadesara"><strong style="color: #888888">Instagram</strong></a> and online <a href="./photography/index.html"><strong style="color: #888888">portfolio</strong></a>.</p>
+			</div>
+		</div>
+
+		<div class="col-md-4 aos-init" style="margin-top: 0px; padding: 7px;" data-aos="fade-up" data-aos-duration="1500">
+			<img src="image/ukulele.png" class="col-md-12" style="margin: 0px; padding: 0px; width: 100%;">
+			<h5 class="col-md-12" style="padding: 0px; margin-top: 7px; margin-bottom: 5px;"><bold>Instrumentalist</bold></h5>
+
+			<div data-aos="fade-up" data-aos-duration="1500" class="aos-init">
+				<p style="font-size: 100%;">Taught myself how to play a <a href="https://en.wikipedia.org/wiki/Harmonica"><strong style="color: #888888"> harmonica</strong></a> ("Monica"), <a href="https://en.wikipedia.org/wiki/Melodica"><strong style="color: #888888">melodica </strong></a>("Veronica"), and <a href="https://en.wikipedia.org/wiki/Ukulele"><strong style="color: #888888">ukulele</strong></a> ("Luke") <i class="em em-guitar" style="display: none;"></i>. I used to play on a garage band in high school and am involved with a jam squad in college. <i class="em em-musical_note" style="display: none;"></i></p>
+			</div>
+		</div>
+
+
+	<hr class="col-md-12 aos-init" data-aos="fade-up" data-aos-duration="1500">
+
+	<h4 class="col-md-12 aos-init" style="padding: 0px; margin-top: 5%; color: #888888; text-align: center;" data-aos="fade-up" data-aos-duration="1500"><bold>Want to grab coffee <i class="em em-coffee" style="display: none;"></i> or have a chat? Drop me a line at</bold> <span style="color: #555555">aakashadesara@berkeley.edu <i class="em em-left_speech_bubble" style="display: none;"></i></span>.</h4>
+
+
+	<!-- <img src="image/facebook.png" class="col-md-1 col-md-offset-4" style="padding: 7px; opacity: 0.5;">
+	<img src="image/github.png" class="col-md-1" style="padding: 7px; opacity: 0.5;">
+	<img src="image/twitter.png" class="col-md-1" style="padding: 7px; opacity: 0.5;">
+	<img src="image/linkedin.png" class="col-md-1" style="padding: 7px; opacity: 0.5;"> -->
+
+	<div style="height: 20%" class="col-md-12"><br></div>
+
+
+
+
+</body></html>
